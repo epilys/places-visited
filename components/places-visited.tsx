@@ -51,7 +51,7 @@ export function PlacesVisited({ locations }: PlacesVisitedProps) {
     <div className="relative w-full h-screen bg-black">
       <div className="absolute top-20 left-0 right-0 z-20 bg-black bg-opacity-50 p-4">
         <h1 className="text-white text-xl sm:text-2xl font-bold text-center">
-          Places we&apos;ve visited together:
+          places I&apos;ve sauntered about
         </h1>
       </div>
       <ErrorBoundary FallbackComponent={FallbackComponent}>
@@ -91,7 +91,7 @@ export function PlacesVisited({ locations }: PlacesVisitedProps) {
       </ErrorBoundary>
       <Drawer open={isDrawerOpen} onOpenChange={setIsDrawerOpen}>
         <DrawerContent>
-          <DrawerHeader className="border-b border-gray-200 flex items-center justify-center">
+          <DrawerHeader className="border-b border-gray-200 flex country-name items-center justify-center">
             <DrawerTitle>{selectedCluster?.country}</DrawerTitle>
             <DrawerClose asChild>
               <Button variant="ghost" size="icon">
